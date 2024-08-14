@@ -65,19 +65,10 @@ public class MergeSort {
         for(int i=0,j=startIndx;i<merged.length;i++,j++){
             arr[j] = merged[i];
         }
-        System.out.println();
-        System.out.println("during sort ---- ");
-        for(int content: arr){
-            System.out.print(content + " ");
-        }
     }
 
     public static void main(String[] args){
         int[] arr = {8,5,2,3,7,9,1};
-        System.out.println("before sort ---- ");
-        for(int content: arr){
-            System.out.print(content + " ");
-        }
         // need to have recursive function
         divide(arr,0,arr.length-1);
         System.out.println();
